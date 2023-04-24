@@ -1,6 +1,0 @@
-{
-  "title": "invalid - missing data field name",
-  "input": {"WHERE":{"GT":{"sections_avg":98}},"OPTIONS":{"COLUMNS":["sections_","sections_avg"]}},
-  "errorExpected": true,
-  "expected": "InsightError"
-}

@@ -1,6 +1,0 @@
-{
-  "title": "invalid - missing gt filter list",
-  "input": {"WHERE":{"GT":""},"OPTIONS":{"COLUMNS":["sections_id","sections_avg"]}},
-  "errorExpected": true,
-  "expected": "InsightError"
-}

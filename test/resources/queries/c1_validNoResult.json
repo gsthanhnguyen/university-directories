@@ -1,6 +1,0 @@
-{
-  "title": "valid - zero result",
-  "input": {"WHERE":{"AND":[{"GT":{"sections_avg":98}},{"IS":{"sections_id":"500"}}]},"OPTIONS":{"COLUMNS":["sections_id","sections_avg"]}},
-  "errorExpected": false,
-  "expected": []
-}

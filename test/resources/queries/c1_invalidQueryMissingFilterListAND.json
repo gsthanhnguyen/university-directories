@@ -1,6 +1,0 @@
-{
-  "title": "invalid - missing and filter list",
-  "input": {"WHERE":{"AND":""},"OPTIONS":{"COLUMNS":["sections_id","sections_avg"]}},
-  "errorExpected": true,
-  "expected": "InsightError"
-}

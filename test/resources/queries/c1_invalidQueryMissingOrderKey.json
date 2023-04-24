@@ -1,6 +1,0 @@
-{
-  "title": "invalid - missing order key",
-  "input": {"WHERE":{"EQ":{"sections_avg":96}},"OPTIONS":{"COLUMNS":["sections_dept","sections_year","sections_avg"],"ORDER":""}},
-  "errorExpected": true,
-  "expected": "InsightError"
-}

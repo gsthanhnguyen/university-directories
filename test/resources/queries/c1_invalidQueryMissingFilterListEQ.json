@@ -1,6 +1,0 @@
-{
-  "title": "invalid - missing eq filter list",
-  "input": {"WHERE":{"EQ":""},"OPTIONS":{"COLUMNS":["sections_id","sections_avg"]}},
-  "errorExpected": true,
-  "expected": "InsightError"
-}

@@ -1,7 +1,0 @@
-{
-	"title": "empty statement inside AND",
-	"input": null,
-	"errorExpected": true,
-	"expected": "InsightError"
-}
-

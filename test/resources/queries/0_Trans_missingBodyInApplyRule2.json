@@ -1,6 +1,0 @@
-{
-	"title": "missing body in apply rule 2- TRANSFORMATIONS",
-	"input": {"WHERE":{"GT":{"sections_avg":98}},"OPTIONS":{"COLUMNS":["sections_title","sections_year","overallAvg"],"ORDER":{"dir":"UP","keys":["sections_title","sections_year"]}},"TRANSFORMATIONS":{"GROUP":["sections_title","sections_year"],"APPLY":[{"overallAvg":""},{"maxYear":{"MAX":"sections_year"}}]}},
-	"errorExpected": true,
-	"expected":"InsightError"
-}

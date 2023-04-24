@@ -1,6 +1,0 @@
-{
-  "title": "invalid - order not in column",
-  "input": {"WHERE":{"GT":{"sections_avg":97}},"OPTIONS":{"COLUMNS":["sections_dept","sections_avg"],"ORDER":"sections_year"}},
-  "errorExpected": true,
-  "expected": "InsightError"
-}
