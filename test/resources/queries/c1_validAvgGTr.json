@@ -1,0 +1,6 @@
+{
+  "title": "valid - avg gt 92",
+  "input": {"WHERE":{"AND":[{"GT":{"sections_avg":92}},{"IS":{"sections_title":"*ht*"}}]},"OPTIONS":{"COLUMNS":["sections_title","sections_avg"],"ORDER":"sections_avg"}},
+  "errorExpected": false,
+  "expected": [{"sections_title":"adv comp archtct","sections_avg":92.6},{"sections_title":"adv comp archtct","sections_avg":92.6},{"sections_title":"intro psychthrpy","sections_avg":93.25},{"sections_title":"intro psychthrpy","sections_avg":93.25},{"sections_title":"intro psychthrpy","sections_avg":95.25},{"sections_title":"intro psychthrpy","sections_avg":95.25}]
+}

@@ -1,0 +1,6 @@
+{
+  "title": "invalid - dataset name capital case",
+  "input": {"WHERE":{"EQ":{"sections_avg":96}},"OPTIONS":{"COLUMNS":["Sections_avg"],"ORDER":"sections_avg"}},
+  "errorExpected": true,
+  "expected": "InsightError"
+}

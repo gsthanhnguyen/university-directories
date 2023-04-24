@@ -1,0 +1,69 @@
+{
+	"title": "complex query",
+	"input": {
+		"WHERE": {
+			"OR": [
+
+				{
+					"AND": [
+						{
+							"NOT": {
+								"LT": {
+									"sections_avg": 98
+								}
+							}
+						},
+						{
+							"IS": {
+								"sections_dept": "apsc"
+							}
+						}
+					]
+				},
+
+				{
+					"EQ": {
+						"sections_avg": 99
+					}
+				},
+
+				{
+					"AND": [
+						{
+							"GT": {
+								"sections_avg": 99
+							}
+						}
+					]
+				}
+
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_id",
+				"sections_avg"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "cnps",
+			"sections_id": "574",
+			"sections_avg": 99.19
+		},
+		{
+			"sections_dept": "math",
+			"sections_id": "527",
+			"sections_avg": 99.78
+		},
+		{
+			"sections_dept": "math",
+			"sections_id": "527",
+			"sections_avg": 99.78
+		}
+	]
+}

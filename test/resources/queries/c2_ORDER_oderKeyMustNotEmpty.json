@@ -1,0 +1,24 @@
+{
+	"title": "ORDER keys must be a non-empty array",
+	"input":{
+		"WHERE": {
+			"IS": {
+				"sections_dept": "civl"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_avg",
+				"sections_title",
+				"sections_dept"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": "sectionsavg"
+
+			}
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

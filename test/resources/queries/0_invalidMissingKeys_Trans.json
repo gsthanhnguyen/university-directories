@@ -1,0 +1,34 @@
+{
+	"title": "new ORDER, but missing keys",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 98
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_id",
+				"counts"
+			],
+			"ORDER": {
+				"dir": "UP"
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept",
+				"sections_id"
+			],
+			"APPLY": [
+				{
+					"counts": {
+						"COUNT": "sections_uuid"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected":"InsightError"
+}

@@ -1,0 +1,6 @@
+{
+  "title": "valid - all same section id",
+  "input": {"WHERE":{"AND":[{"LT":{"sections_avg":60}},{"IS":{"sections_id":"201"}}]},"OPTIONS":{"COLUMNS":["sections_id","sections_avg"]}},
+  "errorExpected": false,
+  "expected": [{"sections_id":"201","sections_avg":57.68},{"sections_id":"201","sections_avg":57.81},{"sections_id":"201","sections_avg":59.23},{"sections_id":"201","sections_avg":59.06},{"sections_id":"201","sections_avg":59.06},{"sections_id":"201","sections_avg":55.67},{"sections_id":"201","sections_avg":52},{"sections_id":"201","sections_avg":59.57},{"sections_id":"201","sections_avg":59.83},{"sections_id":"201","sections_avg":59.43},{"sections_id":"201","sections_avg":57.72},{"sections_id":"201","sections_avg":59.53},{"sections_id":"201","sections_avg":59.67},{"sections_id":"201","sections_avg":59.72}]
+}

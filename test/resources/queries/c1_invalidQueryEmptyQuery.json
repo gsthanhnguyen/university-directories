@@ -1,0 +1,6 @@
+{
+  "title": "invalid - missing options",
+  "input": {},
+  "errorExpected": true,
+  "expected": "InsightError"
+}

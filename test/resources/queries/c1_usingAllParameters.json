@@ -1,0 +1,174 @@
+{
+	"title": "query using all parameters -> should return data",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"OR": [
+						{
+							"GT": {
+								"sections_avg": 90
+							}
+						},
+						{
+							"LT": {
+								"sections_fail": 1
+							}
+						}
+					]
+				},
+				{
+					"AND": [
+						{
+							"NOT": {
+								"IS": {
+									"sections_title": "* *"
+								}
+							}
+						},
+						{
+							"EQ": {
+								"sections_year": 2016
+							}
+						}
+					]
+				},
+				{
+					"OR": [
+						{
+							"GT": {
+								"sections_pass": 40
+							}
+						}
+					]
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_id",
+				"sections_title",
+				"sections_uuid",
+				"sections_instructor",
+				"sections_avg",
+				"sections_pass",
+				"sections_fail",
+				"sections_audit",
+				"sections_year"
+			],
+			"ORDER": "sections_title"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "poli",
+			"sections_id": "345",
+			"sections_title": "",
+			"sections_uuid": "16568",
+			"sections_instructor": "gagnon, jennifer",
+			"sections_avg": 76.89,
+			"sections_pass": 70,
+			"sections_fail": 0,
+			"sections_audit": 0,
+			"sections_year": 2016
+		},
+		{
+			"sections_dept": "apbi",
+			"sections_id": "314",
+			"sections_title": "animals&society",
+			"sections_uuid": "10429",
+			"sections_instructor": "fraser, david;von keyserlingk, marina",
+			"sections_avg": 83.22,
+			"sections_pass": 67,
+			"sections_fail": 0,
+			"sections_audit": 0,
+			"sections_year": 2016
+		},
+		{
+			"sections_dept": "basm",
+			"sections_id": "523",
+			"sections_title": "consult&decision",
+			"sections_uuid": "2586",
+			"sections_instructor": "arrata, philippe",
+			"sections_avg": 79.35,
+			"sections_pass": 43,
+			"sections_fail": 0,
+			"sections_audit": 0,
+			"sections_year": 2016
+		},
+		{
+			"sections_dept": "libr",
+			"sections_id": "506",
+			"sections_title": "human-infrmation",
+			"sections_uuid": "15882",
+			"sections_instructor": "o'brien, heather",
+			"sections_avg": 84.56,
+			"sections_pass": 45,
+			"sections_fail": 0,
+			"sections_audit": 0,
+			"sections_year": 2016
+		},
+		{
+			"sections_dept": "baen",
+			"sections_id": "541",
+			"sections_title": "innov&entrepren",
+			"sections_uuid": "82059",
+			"sections_instructor": "cubbon, paul",
+			"sections_avg": 81.22,
+			"sections_pass": 45,
+			"sections_fail": 0,
+			"sections_audit": 0,
+			"sections_year": 2016
+		},
+		{
+			"sections_dept": "baen",
+			"sections_id": "510",
+			"sections_title": "intrapreneurship",
+			"sections_uuid": "82056",
+			"sections_instructor": "simonite, james",
+			"sections_avg": 84.68,
+			"sections_pass": 41,
+			"sections_fail": 0,
+			"sections_audit": 0,
+			"sections_year": 2016
+		},
+		{
+			"sections_dept": "bama",
+			"sections_id": "550",
+			"sections_title": "marketing",
+			"sections_uuid": "60400",
+			"sections_instructor": "appelt, kirstin",
+			"sections_avg": 82.45,
+			"sections_pass": 55,
+			"sections_fail": 0,
+			"sections_audit": 0,
+			"sections_year": 2016
+		},
+		{
+			"sections_dept": "bama",
+			"sections_id": "550",
+			"sections_title": "marketing",
+			"sections_uuid": "60398",
+			"sections_instructor": "silk, timothy",
+			"sections_avg": 78.84,
+			"sections_pass": 50,
+			"sections_fail": 0,
+			"sections_audit": 0,
+			"sections_year": 2016
+		},
+		{
+			"sections_dept": "bama",
+			"sections_id": "550",
+			"sections_title": "marketing",
+			"sections_uuid": "60397",
+			"sections_instructor": "silk, timothy",
+			"sections_avg": 77.57,
+			"sections_pass": 49,
+			"sections_fail": 0,
+			"sections_audit": 0,
+			"sections_year": 2016
+		}
+	]
+}

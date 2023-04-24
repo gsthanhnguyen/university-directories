@@ -1,0 +1,6 @@
+{
+  "title": "valid - wildcard in title name",
+  "input": {"WHERE":{"AND":[{"GT":{"sections_avg":96}},{"IS":{"sections_title":"h*"}}]},"OPTIONS":{"COLUMNS":["sections_title","sections_avg"],"ORDER":"sections_avg"}},
+  "errorExpected": false,
+  "expected": [{"sections_title":"hlth & soc care","sections_avg":96.09},{"sections_title":"hn dev: inf-adlt","sections_avg":96.23},{"sections_title":"hydrmtllgcl rctr","sections_avg":96.25},{"sections_title":"hydrmtllgcl rctr","sections_avg":96.25},{"sections_title":"harmonic anal i","sections_avg":97.09},{"sections_title":"harmonic anal i","sections_avg":97.09}]
+}

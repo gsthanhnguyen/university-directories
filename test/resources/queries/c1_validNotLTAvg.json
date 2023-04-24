@@ -1,0 +1,6 @@
+{
+  "title": "valid - not lt avg",
+  "input": {"WHERE":{"NOT":{"LT":{"sections_avg":99}}},"OPTIONS":{"COLUMNS":["sections_title","sections_avg"],"ORDER":"sections_avg"}},
+  "errorExpected": false,
+  "expected": [{"sections_title":"career planning","sections_avg":99.19},{"sections_title":"algb topology i","sections_avg":99.78},{"sections_title":"algb topology i","sections_avg":99.78}]
+}

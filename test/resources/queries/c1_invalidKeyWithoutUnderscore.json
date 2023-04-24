@@ -1,0 +1,6 @@
+{
+  "title": "invalid - key without underscore",
+  "input": {"WHERE":{"OR":[{"GT":{"sectionsavg":96}},{"IS":{"sectionstitle":"ht*"}}]},"OPTIONS":{"COLUMNS":["sectionstitle","sections_avg"],"ORDER":"sections_avg"}},
+  "errorExpected": true,
+  "expected": "InsightError"
+}

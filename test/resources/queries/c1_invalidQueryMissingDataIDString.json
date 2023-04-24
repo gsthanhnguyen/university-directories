@@ -1,0 +1,6 @@
+{
+  "title": "invalid - missing dataset id string",
+  "input": {"WHERE":{"GT":{"sections_avg":98}},"OPTIONS":{"COLUMNS":["_id","sections_avg"]}},
+  "errorExpected": true,
+  "expected": "InsightError"
+}

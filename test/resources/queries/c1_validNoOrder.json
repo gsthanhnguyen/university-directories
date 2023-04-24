@@ -1,0 +1,18 @@
+{
+  "title": "valid - no order",
+  "input": {"WHERE":{"LT":{"sections_avg":40}},"OPTIONS":{"COLUMNS":["sections_title","sections_avg"]}},
+  "errorExpected": false,
+  "expected": [
+	  {"sections_title":"found re apprai","sections_avg":4},
+	  {"sections_title":"found re apprai","sections_avg":4},
+	  {"sections_title":"engr econ anlys","sections_avg":33},
+	  {"sections_title":"language & curr","sections_avg":39.03},
+	  {"sections_title":"language & curr","sections_avg":39.03},
+	  {"sections_title":"sustnbt&frst ops","sections_avg":4.5},
+	  {"sections_title":"forest ecology","sections_avg":0},
+	  {"sections_title":"hist 1500 - 20 c","sections_avg":34},
+	  {"sections_title":"in land food com","sections_avg":0},
+	  {"sections_title":"in land food com","sections_avg":0},
+	  {"sections_title":"log & crit think","sections_avg":33.2},
+	  {"sections_title":"prpty,ident&uses","sections_avg":1}]
+}
