@@ -1,0 +1,6 @@
+{
+  "title": "valid - lt dept avg",
+  "input": {"WHERE":{"EQ":{"sections_avg":96}},"OPTIONS":{"COLUMNS":["sections_dept","sections_year","sections_avg"],"ORDER":"sections_avg"}},
+  "errorExpected": false,
+  "expected": [{"sections_dept":"psyc","sections_year":1900,"sections_avg":96},{"sections_dept":"psyc","sections_year":1900,"sections_avg":96},{"sections_dept":"psyc","sections_year":2015,"sections_avg":96},{"sections_dept":"phil","sections_year":2010,"sections_avg":96},{"sections_dept":"pcth","sections_year":1900,"sections_avg":96},{"sections_dept":"kin","sections_year":2013,"sections_avg":96},{"sections_dept":"epse","sections_year":2012,"sections_avg":96},{"sections_dept":"epse","sections_year":1900,"sections_avg":96},{"sections_dept":"epse","sections_year":2009,"sections_avg":96},{"sections_dept":"crwr","sections_year":2014,"sections_avg":96},{"sections_dept":"crwr","sections_year":2012,"sections_avg":96},{"sections_dept":"crwr","sections_year":2013,"sections_avg":96},{"sections_dept":"crwr","sections_year":2014,"sections_avg":96},{"sections_dept":"crwr","sections_year":2014,"sections_avg":96},{"sections_dept":"cnps","sections_year":2013,"sections_avg":96},{"sections_dept":"apsc","sections_year":2010,"sections_avg":96}]
+}

@@ -1,0 +1,29 @@
+{
+	"title": "apply min, valid",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_dept": "cp*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"minAverage"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"minAverage": {
+						"MIN": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected":[{"sections_dept":"cpen","minAverage":69.41},{"sections_dept":"cpsc","minAverage":64}]}

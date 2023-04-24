@@ -1,0 +1,45 @@
+{
+	"title": "Apply rule should only have 1 key, has 2",
+	"input":{
+		"WHERE": {
+			"GT": {
+				"sections_avg": 98.5
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_title",
+				"sections_id",
+				"maxAverage"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"sections_dept"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept",
+				"sections_title",
+				"sections_id"
+			],
+			"APPLY": [
+				{
+					"maxAverage": {
+						"MAX": "sections_avg"
+					}
+				},
+				{
+					"maxAverage": {
+						"MAX": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

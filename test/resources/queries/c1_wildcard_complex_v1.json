@@ -1,0 +1,85 @@
+{
+	"title": "wildCardComplex",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"AND": [
+						{
+							"GT": {
+								"sections_avg": 96
+							}
+						},
+						{
+							"IS": {
+								"sections_dept": "*a*"
+							}
+						}
+					]
+				},
+				{
+					"AND": [
+						{
+							"IS": {
+								"sections_title": "*t *"
+							}
+						},
+						{
+							"IS": {
+								"sections_dept": "**"
+							}
+						}
+					]
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_id",
+				"sections_avg",
+				"sections_title"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "math",
+			"sections_id": "516",
+			"sections_avg": 96.25,
+			"sections_title": "prt diff equa i"
+		},
+		{
+			"sections_dept": "math",
+			"sections_id": "516",
+			"sections_avg": 96.25,
+			"sections_title": "prt diff equa i"
+		},
+		{
+			"sections_dept": "plan",
+			"sections_id": "595",
+			"sections_avg": 96.47,
+			"sections_title": "nat resrce mngmt"
+		},
+		{
+			"sections_dept": "plan",
+			"sections_id": "595",
+			"sections_avg": 96.47,
+			"sections_title": "nat resrce mngmt"
+		},
+		{
+			"sections_dept": "arst",
+			"sections_id": "550",
+			"sections_avg": 96.94,
+			"sections_title": "aud&non-txt arch"
+		},
+		{
+			"sections_dept": "arst",
+			"sections_id": "550",
+			"sections_avg": 96.94,
+			"sections_title": "aud&non-txt arch"
+		}
+	]
+}
